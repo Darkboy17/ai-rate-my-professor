@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rate My Professor
+
+Rate My Professor is a web application designed to help students find the perfect professor for their needs by leveraging AI . It uses a combination of data stored in Pinecone, web scraping, and advanced search and recommendation systems to provide personalized professor recommendations based on user input criteria such as subject area, teaching style, difficulty level, and more. The project is divided into three main levels, each building upon the previous to offer a comprehensive solution for students.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+-   Python 3.x
+-   ReactJS
+-   FastAPI
+-   Pinecone
+-   BeautifulSoup
+-   llamaindex
+-   Groq
+
+### Installation
+
+1.  Clone the repository:
+
+```
+   git clone https://github.com/Darkboy17/ai-rate-my-professor.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2.  Navigate to the project directory:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+   cd ai-rate-my-professor
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3.  Install the required Python packages:
 
-## Learn More
+```
+    python -m venv venv
+    pip install -r requirements.txt
+```
 
-To learn more about Next.js, take a look at the following resources:
+4.  Set up your environment variables for Pinecone API key and any other necessary configurations.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Run the NextJS app:
+```
+	npm run dev
+```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-   Access the application at  `http://localhost:3000`
